@@ -1,0 +1,5 @@
+Bellman Ford algorithm mostly come handy when we have to find the shortest path from source to target and the weights given are negative.
+
+We can obviously use these for positive weights as well but in that case we have dijkstra algorithm which gives us result in O((V+E)log(v)) compared to bellmanfor's O((V+E)V)
+
+// any guesses for why loop runs for n-1 times?? Well the node in a graph having n nodes in total can atmost have n-1 edges now in this algorithm if a node have k nodes then shortest path is guaranteed to be found out after k operations, hence the max iterations are n-1

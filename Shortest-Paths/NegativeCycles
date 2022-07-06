@@ -1,0 +1,3 @@
+Bellman ford fails when we have negative weight cycles.
+
+The presence of the negative weights can be predicted by looping n-1 times as usual and if on another loop if relaxation is achieved then we say we have a negative cycle
