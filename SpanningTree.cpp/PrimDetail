@@ -1,0 +1,17 @@
+We have to form a tree from the undirected graph:
+
+Let's say it has n nodes then we will just need to have n-1 edges but in such a way that all nodes are connected
+
+Other condtition can be on the final sum of pathe weights, if minimum we say it minimum spanning tree.
+
+Algorithm:
+
+1. Maintain key, the nodes already taken in the tree and the parent of each tree.
+2. Initially put key value of node 0 as 0 else infinite.
+3. Repeat this process n times
+   1. Take least key value node not in the tree
+   2. Put it in tree.
+   3. Traverse all crt_ndoes adjacent nodes, if the key value of adjacent nodes(not in the tree) is higher than the the edge weight, change the key value to edge weight and change the parent of that node to the crt_node
+4. Now, the final spanning tree can be easily found out using parent array or whateves
+
+Time Complexity: O((V)(V+E)) which can be further optimized to O((V+E)log(V)) if we use priority queue to find out the least key value
