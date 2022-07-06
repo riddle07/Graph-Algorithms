@@ -1,0 +1,14 @@
+DSU was something I wanted to learn since I was a child. But as a child I had other thing to do. So I grew up apparently.
+
+DSU(Disjoint Set Union) is basically a data structure with various use cases, most of which I am still finding out and will keep listing down below:
+
+1. Check for cycle in the graph
+2. Number of cycles in the graph
+3. Number of Components in the graph
+
+The structure of this data structure is in some sort like a tree. We just maintain a parent for each joint disjoint set.
+
+Algorithm
+
+1. For n nodes we will initially have n disjoint sets.
+2. As we get an edge, we will check for the parent element of the nodes, if they are supposedly different we will union them.
