@@ -51,13 +51,14 @@ int find(int v)
 
 void Union(int v, int u)
 {
-    v = parent[v];
-    u = parent[u];
+    v = find(v);
+    u = find(u);
     if (u != v)
     {
         if (Size[u] > Size[v])
             swap(u, v);
         parent[u] = v;
+        Size[v] += Size[u];
     }
 }
 
